@@ -27,7 +27,7 @@ namespace mathproblem
                 for(int i = 0; i < 10; i++)
                 {
                     Problem p = new Problem();
-                    while (p.IsInvalue() == 1)
+                    while (p.IsInvalid() == 1)
                     {
                         p = new Problem();
                     }

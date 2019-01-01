@@ -35,7 +35,7 @@ namespace mathproblem
             node = new NODE[16];
             GenerateTree(1);
             finalValue = Solve(1);
-            if (finalValue == null) invalue = 1;
+            if (finalValue == null) invalid = 1;
         }
         public Problem(string por)
         {
@@ -43,28 +43,28 @@ namespace mathproblem
         }
         public void PrintProblem()
         {
-            if (invalue == 1) return;
+            if (invalid == 1) return;
             PrintTree(1);
             Console.Write("= ?");
             Console.WriteLine();
         }
         public void PrintAnswer()
         {
-            if (invalue == 1) return;
+            if (invalid == 1) return;
             finalValue.Print();
             Console.WriteLine();
         }
         public void PrintProblemWithAnswer()
         {
-            if (invalue == 1) return;
+            if (invalid == 1) return;
             PrintTree(1);
             Console.Write("= ");
             finalValue.Print();
             Console.WriteLine();
         }
-        public int IsInvalue()
+        public int IsInvalid()
         {
-            return invalue;
+            return invalid;
         }
 
         //*************************以下为私有部分**************************************************************
@@ -79,7 +79,7 @@ namespace mathproblem
         private enum GenType { onlyOperation, both, onlyNumber}; //生成某一节点的方式
         static readonly private Random randomNumber = new Random(); //生成表达式的随机数
         private Number finalValue;        //生成表达式的最终答案
-        readonly private int invalue = 0; //生成的表达式是否无效
+        readonly private int invalid = 0; //生成的表达式是否无效
 
         private void PrintTree(int num)
         {
