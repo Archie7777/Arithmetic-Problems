@@ -1,7 +1,8 @@
-
-# <center> Arithmetic-Problems </center>
-<center>😚🍩😂🎉🌞🚖<center>
-<center> BIT软件工程结队项目 </center>
+![](https://raw.githubusercontent.com/Archie7777/Arithmetic-Problems/master/images/featherwallpaper.png)
+<div align="center">
+<h1> Arithmetic-Problems </h1>
+<p>😚🍩😂🎉🌞🚖<p>
+<p><strong> BIT软件工程结队项目 </strong></p>
 
 ## 项目结构
 ```bash
