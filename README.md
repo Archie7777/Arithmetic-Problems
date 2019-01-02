@@ -1,6 +1,9 @@
-# Arithmetic-Problems
-A sample project to generate arithmetic problem.
 
+# <center> Arithmetic-Problems </center>
+<center>😚🍩😂🎉🌞🚖<center>
+<center> BIT软件工程结队项目 </center>
+
+## 项目结构
 ```bash
 │  .gitignore
 │  LICENSE
