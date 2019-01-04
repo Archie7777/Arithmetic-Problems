@@ -36,6 +36,8 @@ namespace mathproblem
                     return a * b;
                 case '/':
                     return a / b;
+                case '^':
+                    return a ^ b;
             }
             return null;
         }

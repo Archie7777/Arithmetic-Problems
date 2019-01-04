@@ -5,3 +5,10 @@ C:\Users\阿琪\Source\Repos\mathproblem\mathproblem\obj\Debug\mathproblem.cspro
 C:\Users\阿琪\Source\Repos\mathproblem\mathproblem\obj\Debug\mathproblem.csproj.CoreCompileInputs.cache
 C:\Users\阿琪\Source\Repos\mathproblem\mathproblem\obj\Debug\mathproblem.exe
 C:\Users\阿琪\Source\Repos\mathproblem\mathproblem\obj\Debug\mathproblem.pdb
+C:\Users\阿琪\Desktop\Arithmetic-Problems\mathproblem\bin\Debug\mathproblem.exe.config
+C:\Users\阿琪\Desktop\Arithmetic-Problems\mathproblem\bin\Debug\mathproblem.exe
+C:\Users\阿琪\Desktop\Arithmetic-Problems\mathproblem\bin\Debug\mathproblem.pdb
+C:\Users\阿琪\Desktop\Arithmetic-Problems\mathproblem\obj\Debug\mathproblem.csprojAssemblyReference.cache
+C:\Users\阿琪\Desktop\Arithmetic-Problems\mathproblem\obj\Debug\mathproblem.csproj.CoreCompileInputs.cache
+C:\Users\阿琪\Desktop\Arithmetic-Problems\mathproblem\obj\Debug\mathproblem.exe
+C:\Users\阿琪\Desktop\Arithmetic-Problems\mathproblem\obj\Debug\mathproblem.pdb

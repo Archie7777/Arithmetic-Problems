@@ -85,7 +85,17 @@ namespace mathproblem
             Number c = new Number(nu, de);
             return c;
         }
-        
+        public static Number operator ^(Number a, Number b)
+        {
+            if (a == null || b == null) return null;
+            Number c = new Number(1);
+            for (int i = 0; i < b.numerator / b.denominator; i++)
+            {
+                c *= a;
+            }
+            return c;
+        }
+
 
         private int denominator;
         private int numerator;
