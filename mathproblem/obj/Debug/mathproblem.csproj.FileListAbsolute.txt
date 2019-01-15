@@ -12,3 +12,10 @@ C:\Users\阿琪\Desktop\Arithmetic-Problems\mathproblem\obj\Debug\mathproblem.cs
 C:\Users\阿琪\Desktop\Arithmetic-Problems\mathproblem\obj\Debug\mathproblem.csproj.CoreCompileInputs.cache
 C:\Users\阿琪\Desktop\Arithmetic-Problems\mathproblem\obj\Debug\mathproblem.exe
 C:\Users\阿琪\Desktop\Arithmetic-Problems\mathproblem\obj\Debug\mathproblem.pdb
+C:\Users\Administrator\Desktop\Arithmetic-Problems\mathproblem\bin\Debug\mathproblem.exe.config
+C:\Users\Administrator\Desktop\Arithmetic-Problems\mathproblem\bin\Debug\mathproblem.exe
+C:\Users\Administrator\Desktop\Arithmetic-Problems\mathproblem\bin\Debug\mathproblem.pdb
+C:\Users\Administrator\Desktop\Arithmetic-Problems\mathproblem\obj\Debug\mathproblem.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\Arithmetic-Problems\mathproblem\obj\Debug\mathproblem.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Arithmetic-Problems\mathproblem\obj\Debug\mathproblem.exe
+C:\Users\Administrator\Desktop\Arithmetic-Problems\mathproblem\obj\Debug\mathproblem.pdb
