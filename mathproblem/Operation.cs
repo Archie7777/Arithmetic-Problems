@@ -23,7 +23,25 @@ namespace mathproblem
         {
             Console.Write("{0} ", op);
         }
-
+        public bool Equals(char op)
+        {
+            if (this.op == op) return true;
+            else return false;
+        }
+        public string GetString()
+        {
+            string s = "";
+            s += op;
+            return s;
+        }
+        public string GetString2()
+        {
+            string s = "";
+            if (op != '^')
+                s += op;
+            else s += "**";
+            return s;
+        }
         public Number Calculate(Number a, Number b)
         {
             switch (op)
