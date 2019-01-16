@@ -127,5 +127,29 @@ namespace mathproblem
         {
             return (a * b) / Get_gcd(a, b);
         }
+        private string ToString(int a)
+        {
+            int x = 1;
+            string ans;
+            if (a < 0)
+            {
+                ans = "-";
+                a = -a;
+            }
+            else ans = "";
+            while (true)
+            {
+                x *= 10;
+                if (a < x) break;
+            }
+            x /= 10;
+            while (x > 0)
+            {
+                ans += Convert.ToChar(a / x + '0');
+                a %= x;
+                x /= 10;
+            }
+            return ans;
+        }
     }
 }
