@@ -48,7 +48,6 @@
     <Compile Include="Expression.cs" />
     <Compile Include="Number.cs" />
     <Compile Include="Operation.cs" />
-    <Compile Include="Problem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
