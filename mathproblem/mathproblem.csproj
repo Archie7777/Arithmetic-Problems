@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="ArgumentParser.cs" />
     <Compile Include="Component.cs" />
+    <Compile Include="Expression.cs" />
     <Compile Include="Number.cs" />
     <Compile Include="Operation.cs" />
     <Compile Include="Problem.cs" />
