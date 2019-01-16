@@ -7,6 +7,7 @@
 //      3.允许参与运算的对象为空，若参与运算的对象有空对象，则返回值为空值
 //      4.若存在除零现象发生，不抛出异常，但返回空值
 //      5.不允许创建的对象的分母为0，若创建时输入的分母为0，则抛出异常
+//      6.GetString() 将数字转化成字符串格式并返回。
 //------------------------------------------
 
 using System;
@@ -45,6 +46,23 @@ namespace mathproblem
             int de = denominator / gcd;
             if (de == 1) Console.Write("{0} ", nu);
             else Console.Write("{0}/{1} ", numerator, denominator);
+        }
+        public string GetString()
+        {
+            string s = "";
+            int gcd = Get_gcd(numerator, denominator);
+            int nu = numerator / gcd;
+            int de = denominator / gcd;
+            if (de < 0)
+            {
+                nu = -nu;
+                de = -de;
+            }
+            if (de == 1)
+                s += ToString(nu);
+            else
+                s += ToString(nu) + '/' + ToString(de);
+            return s;
         }
 
         public static Number operator +(Number a, Number b)
