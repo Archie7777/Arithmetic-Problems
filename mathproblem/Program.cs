@@ -51,18 +51,24 @@ namespace mathproblem
             {
                 int correctNum = 0;
                 int wrongNum = 0;
-                Expression ep = new Expression();
-                while (ep.IsInvalid())
+                while (true)
                 {
-                    ep = new Expression();
+                    Expression ep = new Expression();
+                    while (ep.IsInvalid())
+                    {
+                        ep = new Expression();
+                    }
+                    ep.PrintExpression();
+                    string answer = Console.ReadLine();
+                    if (answer == "stop")
+                    {
+                        Console.WriteLine("正确数量：{0} 错误数量：{1}", correctNum, wrongNum);
+                        break;
+                    }
+                    if (answer == ep.GetAnswerString())
+                        correctNum++;
+                    else wrongNum++;
                 }
-                ep.PrintExpression();
-                string answer = Console.ReadLine();
-                if (answer == "stop")
-                    Console.WriteLine("正确数量：{0} 错误数量：{1}", correctNum, wrongNum);
-                if (answer == ep.GetAnswerString())
-                    correctNum++;
-                else wrongNum++;
                 return;
             }
 

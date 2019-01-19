@@ -4,3 +4,4 @@ C:\Users\阿琪\Desktop\新建文件夹\Arithmetic-Problems\mathproblem\bin\Rele
 C:\Users\阿琪\Desktop\新建文件夹\Arithmetic-Problems\mathproblem\obj\Release\mathproblem.csproj.CoreCompileInputs.cache
 C:\Users\阿琪\Desktop\新建文件夹\Arithmetic-Problems\mathproblem\obj\Release\mathproblem.exe
 C:\Users\阿琪\Desktop\新建文件夹\Arithmetic-Problems\mathproblem\obj\Release\mathproblem.pdb
+C:\Users\阿琪\Desktop\新建文件夹\Arithmetic-Problems\mathproblem\obj\Release\mathproblem.csprojAssemblyReference.cache
