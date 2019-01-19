@@ -9,7 +9,7 @@
 ## 图形界面程序代码仓库
 [https://github.com/Archie7777/Shitty-Game](https://github.com/Archie7777/Shitty-Game)
 
-## 成员博客
+## 组内成员博客
 
 [阿琪](https://blog.csdn.net/weixin_43407283/article/details/86478548)
 [郭艺璇](https://blog.csdn.net/weixin_41709195/article/details/86515191)
@@ -90,11 +90,11 @@
     └─Properties
             AssemblyInfo.cs
 ```
-### 可运行文件 
+### 可运行文件位置
 ```
 mathproblem/bin/release/mathproblem.exe
 ```
-### 目前完成情况：
+### 需求完成情况：
 #### 1.可以生成给定数量的表达式。
 命令：
 ```
