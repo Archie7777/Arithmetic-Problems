@@ -49,15 +49,24 @@ namespace mathproblem
 
             if (argument.Get(1) == "-p")
             {
-                Console.WriteLine("play");
+                int correctNum = 0;
+                int wrongNum = 0;
+                Expression ep = new Expression();
+                while (ep.IsInvalid())
+                {
+                    ep = new Expression();
+                }
+                ep.PrintExpression();
+                string answer = Console.ReadLine();
+                if (answer == "stop")
+                    Console.WriteLine("正确数量：{0} 错误数量：{1}", correctNum, wrongNum);
+                if (answer == ep.GetAnswerString())
+                    correctNum++;
+                else wrongNum++;
                 return;
             }
 
             System.Console.WriteLine("Please enter correct argument.");
-            System.Console.WriteLine("Usage:\n" +
-                "generate 1000 problems: -g absolute_path_of_output_file\n" +
-                "play games: -p num_of_problem_you_want_to_play\n" +
-                "solve problems: -s absolute_path_of_problem_file");
             return;
         }
         static void Generate(System.IO.StreamWriter file)

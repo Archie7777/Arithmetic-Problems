@@ -95,6 +95,10 @@ namespace mathproblem
         {
             difficulty = df;
         }
+        public string GetAnswerString()
+        {
+            return finalValue.GetString();
+        }
 
 
 
