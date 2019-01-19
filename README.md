@@ -6,6 +6,14 @@
 <p><strong> BIT软件工程结队项目 </strong></p>
 </div>
 
+## 图形界面程序代码仓库
+[https://github.com/Archie7777/Shitty-Game](https://github.com/Archie7777/Shitty-Game)
+
+## 成员博客
+
+[阿琪](https://blog.csdn.net/weixin_43407283/article/details/86478548)
+[郭艺璇](https://blog.csdn.net/weixin_41709195/article/details/86515191)
+
 ## 项目结构
 
 ```bash
@@ -14,14 +22,31 @@
 │  mathproblem.sln
 │  README.md
 │
+├─.vs
+│  └─mathproblem
+│      ├─DesignTimeBuild
+│      │      .dtbcache
+│      │
+│      └─v15
+│          └─Server
+│              └─sqlite3
+│                      db.lock
+│                      storage.ide
+│                      storage.ide-shm
+│                      storage.ide-wal
+│
+├─images
+│      featherwallpaper.png
+│
 └─mathproblem
     │  App.config
+    │  ArgumentParser.cs
     │  Component.cs
+    │  Expression.cs
     │  mathproblem.csproj
     │  mathproblem.csproj.user
     │  Number.cs
     │  Operation.cs
-    │  Problem.cs
     │  Program.cs
     │
     ├─bin
@@ -31,8 +56,26 @@
     │  │      mathproblem.pdb
     │  │
     │  └─Release
+    │          Expressions.txt
+    │          mathproblem.exe
+    │          mathproblem.exe.config
+    │          mathproblem.pdb
+    │
     ├─obj
-    │  └─Debug
+    │  ├─Debug
+    │  │  │  DesignTimeResolveAssemblyReferencesInput.cache
+    │  │  │  mathproblem.csproj.CoreCompileInputs.cache
+    │  │  │  mathproblem.csproj.FileListAbsolute.txt
+    │  │  │  mathproblem.csprojAssemblyReference.cache
+    │  │  │  mathproblem.exe
+    │  │  │  mathproblem.pdb
+    │  │  │  TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+    │  │  │  TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+    │  │  │  TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+    │  │  │
+    │  │  └─TempPE
+    │  └─Release
+    │      │  DesignTimeResolveAssemblyReferences.cache
     │      │  DesignTimeResolveAssemblyReferencesInput.cache
     │      │  mathproblem.csproj.CoreCompileInputs.cache
     │      │  mathproblem.csproj.FileListAbsolute.txt
@@ -47,17 +90,38 @@
     └─Properties
             AssemblyInfo.cs
 ```
+### 可运行文件 
+```
+mathproblem/bin/release/mathproblem.exe
+```
 ### 目前完成情况：
-可以生成给定数量的表达式。
+#### 1.可以生成给定数量的表达式。
 命令：
 ```
 ./mathproblem -g 1000 [-h] [-c/-d]
 ```
 不输入-h则默认生成最简单表达式，即只有两个整数和一个运算符。
+
 输入-h则生成最多7个运算符，8个数字的表达式，且包括真分数。
+
 -c 和 -d 控制乘方运算的输出格式，-c为 ‘ ^ ’，-h为 ‘ ** ’，若二者都不输入，则表达式中无乘方运算。
+
 后两个方括号内指令不分顺序。
-#### 以下为对应的命令和输出：
+
+#### 2.可以接受用户输入答案，给出错误正确数量
+命令：
+```
+./mathproblem -p
+```
+输入命令后开始一个一个生成表达式。
+
+输入分数答案的格式为
+
+数字/数字
+
+如果输入stop则停止出题，最后一个题目不算分数。
+
+### 示例：
 ##### 命令1：
 ```
 ./mathproblem -g 5
@@ -129,4 +193,22 @@
 ((2 - 5/8 ) - (8 + 0 ) ) ** 3 = -148877/512
 ((2/3 - 0 ) / 1/2 ) ** 3 = 64/27
 (3/2 * 1 ) * ((2/3 - 1/4 ) / 1 ) = 5/8
+```
+##### 命令7：
+```
+./mathproblem -p
+```
+##### 输入输出：
+```
+2 * 7 = ?
+14
+11 - 13 = ?
+-2
+15 * 10 = ?
+150
+10 - 18 = ?
+-8
+13 * 0 = ?
+stop
+正确数量：4 错误数量：0
 ```
